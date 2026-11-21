@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <script>/* debug probe: report errors to dev server log */(function(){function r(k,m){try{new Image().src='http://192.168.8.186:8000/__err?'+k+'='+encodeURIComponent(String(m).slice(0,1500))+'&t='+Date.now()}catch(e){}}r('ua',location.href+' '+navigator.userAgent+' wasm='+(typeof WebAssembly)+' sw='+('serviceWorker' in navigator)+' idb='+(typeof indexedDB)+' secure='+window.isSecureContext);window.addEventListener('error',function(e){r('error',(e.message||'')+' @'+(e.filename||'')+':'+(e.lineno||'')+' '+(e.error&&e.error.stack||''))},true);window.addEventListener('unhandledrejection',function(e){var x=e.reason;r('reject',x&&(x.stack||x.message)||x)});var ce=console.error;console.error=function(){r('console',[].map.call(arguments,function(a){return a&&(a.stack||a.message)||a}).join(' | '));return ce.apply(console,arguments)}})();</script>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
