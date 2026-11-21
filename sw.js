@@ -8,6 +8,7 @@ var ASSETS = [
   "./details.chunk.js",
   "./discover.chunk.js",
   "./empty.png",
+  "./hls.min.js",
   "./home.chunk.js",
   "./icon.png",
   "./index.html",
